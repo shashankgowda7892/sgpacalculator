@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    padding: 30px;
+    background: url('background.jpg');
+    background-size: cover;
+}
+
+
+.container{
+    max-width: 900px;
+    /* width: 100%; */
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    padding: 15px;
+    box-shadow: 0 2px 2px black,0 1px 6px black;
+    overflow-x: auto;
+    border-radius: 15px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    /* counter-reset: serial-number; */
+}
+
+.table th, .table td{
+    border: 2px solid black;
+    padding :10px 10px;
+    /* background-color: red; */
+}
+
+/* .table td:first-child::before{
+    counter-increment: serial-number;
+    content: counter(serial-number);
+} */
+
+/* form */
+.formcontrol{
+    border: 1px solid black;
+    background-color:transparent;
+    outline: none;
+    /* font-size: 20px; */
+    padding: 8px 12px;
+    width: 100;
+    color: black;
+}
+
+.formcontrol{
+    -ms-text-justify:auto;
+}
+ input{
+    width: 100%;
+ }
+ 
+
+.calculate{
+    /* position:relative; */
+    display: block;
+    /* padding: 20px; */
+    margin: auto;
+    background-color: red;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+    margin-top: 6px;
+}
+
+.printbtn{
+     position: relative;
+    display: block;
+    background-color: red;
+    margin: auto;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    
+    width: 160px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 6px;
+ }
+
+#autoSizingSelect{
+    width: 100%;
+    padding: 10px;
+
+ }
+
+.result{
+    width: 50%;
+}
+
+.total{
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    
+    color: black;
+}
+
+
+
+.result input{
+    height: 35px;
+    
+    font-size:large;
+    font-weight:bold ;
+    box-shadow:4px 5px;
+    width: 20%;
+    text-align: center;
+}
+
+
+h3{
+    font-weight: bold;
+    color: red;
+    
+    /* margin:auto; */
+    text-align: end;
+}
+
+h6{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    border: 2px solid black;
+    /* text-decoration: underline; */
+}
+
+.success{
+    
+    background-color: red;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    
+    width: 103%;
+    border-radius: 10px;
+    color: white;
+    margin-top: 0px;
+}
+.danger{
+    background-color: red;
+    padding:3px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    right: 2px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: 103%;
+    border-radius: 10px;
+    color: white;
+}
+
+@media print 
+{
+    .danger, .success, .noprint, .calculate{
+        display: none;
+    }
+}
+
+input::placeholder{
+    text-align: center;
+    
+}

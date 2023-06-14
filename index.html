@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+  <script src="calculate.js"></script>
+  <script src="index.js"></script>
+ <!-- <script>
+      function print(){
+    window.print();
+}
+
+ </script> -->
+  
+</head>
+<body>
+
+    <div class="container"> 
+      <div>
+        <H6>SGAP CALCULATOR</H6>
+        <br>
+        
+      </div>
+      <table class="table">
+        <thead style="background-color:cyan;">
+          <tr >
+            <th>SUBJECT</th>
+            <th>MARKS</th>
+            <th>CREDITS</th>
+            <th class="noprint">
+              
+                <button class="success" onclick="create()">&#43
+                  </button>
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tbody" >
+          <tr id="trow" class="d-none" >
+            <td style="width: 280px;">
+              <input type="search" class="formcontrol" placeholder="SUBJECT NAME" list="search"  >
+              <datalist id="search" >
+                <option value="COMPUTER ORGANIZATION"></option>
+                <option value="JAVA LAB"></option>
+                <option value="ABE LAB"></option>
+                <option value="MO LAB"></option>
+                <option value="DATA STRUCTURE"></option>
+                <option value="ANALOG AND DIGITAL"></option>
+                <option value="SOCIAL CONNECT"></option>
+                <option value="CONSTITUTION"></option>
+                <option value="MATHS"></option>
+              </datalist>
+            </td>
+            <td>
+              <input type="text" class="formcontrol" placeholder="ENTER MARKS" name="mark" onloadstart="Calc(this)" >
+            </td>
+            <td>
+              <input type="text" class="formcontrol" placeholder="ENTER CREDITS" name="credit" onloadstart="Calc(this)" >
+              
+            </td>
+            <td class="noprint">
+             
+                <button class="danger" onclick="remove(this)">&#10006
+                </button>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button class="calculate" type="button" onclick="calculate()">CALCULATE</button>
+      </div>
+     
+      
+
+
+  <div class="result">
+    <div class="total">
+      <span>TOTAL :</span>
+      <input type="number" id="TOTALs" class="form"  placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
+    </div>
+
+    <div class="total">
+      <span>SGAP :</span>
+      <input type="text" id="SGPA" name="sgpa" class="form" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
+    </div>
+
+    <div class="total">
+      <span>PERCENTAGE :</span>
+      <input type="text" id="PERCENT" name="PERCENT" class="form" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
+    </div>
+  </div>    
+  <h3 class="noprint">NOTE : DON'T DELETE FIRST ROW</h3>
+    </div>
+  
+</body>
+</html>
