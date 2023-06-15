@@ -43,10 +43,23 @@ function Calc(v){
         console.log(smarks);
         if(smarks == 100){
             smarks = 10;
+            var s_marks = Math.trunc(smarks);
+        }
+        else if(smarks<=39){
+            smarks = 0;
+            var s_marks = Math.trunc(smarks);
+        }
+        else if(smarks>=40 && smarks<=49){
+            smarks = 4;
+            var s_marks = Math.trunc(smarks);
+        }
+        else if(smarks>=50 && smarks<=54){
+            smarks = 5;
+            var s_marks = Math.trunc(smarks);
         }
         else{
             smarks = (+(smarks)/10)+1;
-            var s_marks = Math.trunc(smarks)
+            var s_marks = Math.trunc(smarks);
             // console.log(s_marks);
         }
 
