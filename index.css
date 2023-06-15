@@ -9,7 +9,8 @@ body{
     background-color: black;
     padding: 30px;
     background: url('background.jpg');
-    background-repeat: no-repeat;
+/*     background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 
