@@ -77,7 +77,7 @@ function Calc(v){
  
     var sgpa = ssum/sgpa_sum;
 
-    document.getElementById("SGPA").value = sgpa;
+    document.getElementById("SGPA").value = sgpa.toFixed(2);
  
    
 }
